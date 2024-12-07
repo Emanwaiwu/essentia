@@ -3,7 +3,7 @@ import bg from "./assets/bg.png";
 import Lenis from "lenis";
 import "./App.css";
 import Menu from "./Components/Menu.jsx";
-import line from "./assets/line.svg";
+import line from "./assets/Line.svg";
 import arrow from "./assets/arrow.svg";
 import arrow2 from "./assets/arrow2.svg";
 import arrow3 from "./assets/arrow3.svg";
