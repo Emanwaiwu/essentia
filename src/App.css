@@ -1,0 +1,452 @@
+
+
+/*.body {
+  border: 1px solid red;
+}*/
+
+.text-content {
+  color: white;
+}
+
+.loading-circle {
+  border: 2px solid transparent;
+  border-top: 1px solid #fffafa;
+  border-left: 1px solid #fffafa;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: rotate 2s linear infinite;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.toggle {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.toggle .common {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.toggle .top_line {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Default hidden state for .slide */
+.slide {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.heading {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0;
+  color: #d33434;
+  font-size: 1rem;
+}
+.heading-left {
+  display: flex;
+  justify-content: flex-start;
+  color: #d33434;
+  font-size: 1rem;
+}
+.heading-left-contact {
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.line {
+  height: 1.5px;
+  background-color: black;
+}
+
+.large-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 650px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.img-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.responsive-text {
+  font-size: clamp(52px, 300px, 300px);
+}
+
+.responsive-texts {
+  font-size: 17vw; /* 5% of the viewport width */
+}
+
+.cut-off-text {
+  height: 75px; /* Set the width to 50% of the viewport */
+  overflow: hidden; /* Hide the text that's outside the container */
+  position: relative;
+  transform: translateX(0); /* You can adjust this value for a custom offset */
+}
+
+.bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(19, 16, 12, 0.60)),
+    url("./assets/loading-bg.jpg");
+  background-blend-mode: normal;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.contact {
+  background: linear-gradient(rgba(19, 16, 12, 0.98), rgba(19, 16, 12, 0.98)),
+    url("./assets/footer-bg.jpg");
+  background-blend-mode: normal;
+  background-size: cover;
+  background-position: center;
+}
+
+.loading {
+  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(19, 16, 12, 0.90)),
+    url("./assets/bg.jpg");
+  background-blend-mode: normal;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .connect-button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: 17px;
+    margin-top: 0.75rem;
+    border-radius: 3px;
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+  }
+  .button-icon-container {
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 1.5px;
+    margin-left: 0.5rem;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .centered-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .main-content {
+    max-width: 340px;
+  }
+  .content h1 {
+    font-size: 7.5vw;
+    line-height: 3rem;
+  }
+
+  .large-img {
+    max-height: 350px;
+  }
+  .img-text {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 765px) {
+  .centered-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .cut-off-text {
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+  }
+  .responsive-texts {
+    font-size: 20vw; /* 5% of the viewport width */
+  }
+  .content h1 {
+    font-size: 5vw;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+  }
+
+  .main-content {
+    max-width: 500px;
+    margin-top: 30vh;
+    margin-left: 10vw;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  /* Button styling */
+  .connect-button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: 18px;
+    margin-top: 0.75rem;
+    border-radius: 3px;
+    padding: 0.2rem 0.5rem;
+    font-size: 16px;
+  }
+
+  .button-icon-container {
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 2px;
+    margin-left: 0.5rem;
+  }
+
+  /* Centering large text on screen */
+  .centered-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .content h1 {
+    font-size: 4vw;
+    line-height: 4rem;
+  }
+
+  .large-img {
+    max-height: 350px;
+  }
+  .responsive-texts {
+    font-size: 20vw;
+  }
+
+  .cut-off-text {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .content h1 {
+    font-size: 4vw;
+    line-height: 6rem;
+  }
+
+  .main-content {
+    max-width: 500px;
+    margin-top: 30vh;
+    margin-left: 20vh;
+  }
+
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .large-img {
+    max-height: 450px;
+  }
+  .responsive-texts {
+    font-size: 20vw;
+  }
+
+  .cut-off-text {
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .main-content {
+    max-width: 500px;
+    margin-top: 30vh;
+    margin-left: 20vh;
+  }
+
+  .content h1 {
+    font-size: 4vw;
+    line-height: 7rem;
+  }
+
+  /* Centering large text on screen */
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-size: 300px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .large-img {
+    max-height: 600px;
+  }
+
+  .responsive-texts {
+    font-size: 20vw;
+  }
+
+  .cut-off-text {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+/* Checkbox checked state animations */
+#menu-toggle:checked ~ .text-content .toggle .top_line {
+  left: 7px;
+  top: 18px;
+  width: 25px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .text-content .toggle .bottom_line {
+  left: 7px;
+  top: 18px;
+  width: 25px;
+  transform: rotate(-45deg);
+}
+
+#menu-toggle:checked ~ .text-content .toggle .middle_line {
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+#menu-toggle:checked ~ .text-content .slide {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
+}
+
+#menu-toggle:checked ~ .text-content .slide li:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+#menu-toggle:checked ~ .text-content .slide li:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+#menu-toggle:checked ~ .text-content .slide li:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+#menu-toggle:checked ~ .text-content .slide li:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 2s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
