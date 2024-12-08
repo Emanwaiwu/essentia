@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Menu = () => {
   return (
@@ -17,18 +18,26 @@ const Menu = () => {
           </div>
         </label>
 
-        <ul className="space-y-2 text-[14px] slide">
+        <ul className="space-y-2 text-[14px] slide block">
           <li className="w-[102px] bg-white/30 backdrop-blur-[2px] rounded-[5px] p-1 px-2 border border-white/20">
-            ABOUT
+            <Link to="about" smooth={true} duration={2000}>
+              ABOUT
+            </Link>
           </li>
           <li className="w-[102px] bg-white/30 backdrop-blur-[2px] rounded-[5px] p-1 px-2 border border-white/20">
-            BUILDINGS
+            <Link to="buildings" smooth={true} duration={2000}>
+              BUILDINGS
+            </Link>
           </li>
           <li className="w-[102px] bg-white/30 backdrop-blur-[2px] rounded-[5px] p-1 px-2 border border-white/20">
-            CAREERS
+            <Link to="careers" smooth={true} duration={2000}>
+              CAREERS
+            </Link>
           </li>
           <li className="w-[102px] bg-white/30 backdrop-blur-[2px] rounded-[5px] p-1 px-2 border border-white/20">
-            CONTACT
+            <Link to="contact" smooth={true} duration={2000}>
+              CONTACT
+            </Link>
           </li>
         </ul>
       </div>

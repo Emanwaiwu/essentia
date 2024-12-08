@@ -199,7 +199,8 @@ const Home = () => {
       <ReactLenis root>
         <main className="scroll-smooth">
           <motion.section
-            className="bg hero p-7 h-screen text-content"
+            className="bg hero p-7 h-screen overflow-clip text-content"
+            loading="lazy" 
             style={{
               scale,
               borderBottomRightRadius: corners,
@@ -458,6 +459,7 @@ const Home = () => {
                       src={ceo}
                       alt=""
                       className="w-10 h-10 rounded-[3px] object-cover"
+                      loading="lazy" 
                     />
                     CEO/Founding Principal{" "}
                   </span>
@@ -469,7 +471,7 @@ const Home = () => {
             </div>
             <div>
               <motion.div style={{ scale: scale2 }} className="w-full mx-auto">
-                <img src={no1} alt="" className="large-img" />
+                <img src={no1} alt="" className="large-img" loading="lazy"  />
                 <div className="img-text">
                   <p>01</p>
                   <p>Herb One | Aug 2020 | 500,000 sqft</p>
@@ -501,13 +503,14 @@ const Home = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
                 className="space-y-3 text-[#000000] sm:text-[1.5rem] smm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] text-[50px]"
+                loading="lazy" 
               >
                 {[
                   "Skyline Residences",
                   "The Caramel Handmade",
                   "Axis Business Park",
                   "Wellness Institute",
-                  "Pioneer University Complex",
+                  "Pioneer University",
                   "Nexus Convention Hall",
                   "Herb One",
                   "City Garden Pavilion",
@@ -528,13 +531,13 @@ const Home = () => {
                 ))}
               </motion.div>
 
-              <div className="space-y-24 md:space-y-10 lg:space-y-16 sm:space-y-14 space-x-32 sm:space-x-0  md:space-x-0 lg:space-x-0 sm:hidden">
+              <div className=" w-[600px] space-y-24 md:space-y-10 lg:space-y-16 sm:space-y-14 space-x-32 sm:space-x-0  md:space-x-0 lg:space-x-0 sm:hidden">
                 {[
                   { img: no2, title: "The Caramel Handmade", date: "Sep 2020" },
                   { img: no3, title: "Wellness Institute", date: "Jul 2021" },
                   {
                     img: no4,
-                    title: "Pioneer University Complex",
+                    title: "Pioneer University",
                     date: "Apr 2022",
                   },
                   { img: no5, title: "Aurora of Art", date: "Oct 2021" },
@@ -560,6 +563,7 @@ const Home = () => {
                         src={item.img}
                         alt=""
                         className="object-cover w-[150px] h-[75px] rounded-[10px]"
+                        loading="lazy" 
                       />
                       <div className="img-text">
                         <p>{index + 1}</p>
@@ -576,7 +580,7 @@ const Home = () => {
 
             <div>
               <motion.div style={{ scale: scale3 }} className="w-full mx-auto">
-                <img src={no7} alt="" className="large-img" />
+                <img src={no7} alt="" className="large-img" loading="lazy" />
                 <div className="img-text">
                   <p>07</p>
                   <p>Axis Business Park | Sep 2018 | 675,000 sqft</p>
@@ -617,6 +621,7 @@ const Home = () => {
                       src={career}
                       alt=""
                       className="object-cover w-[400px] h-[300px] rounded-[10px] sm:mt-10"
+                      loading="lazy" 
                     />
                   </div>
                   <div className="flex-col text-[16px] sm:mt-20 space-y-2 ">
@@ -726,7 +731,7 @@ const Home = () => {
             </div>
           </section>
 
-          <section className="contact" id="contact">
+          <section className="contact" id="contact" loading="lazy" >
             <div className="sm:p-8 p-20 md:p-8 max-w-[1440px] mx-auto text-white">
               <div className="heading-left-contact ">
                 [
