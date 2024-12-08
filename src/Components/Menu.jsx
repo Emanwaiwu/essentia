@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Menu = () => {
   return (
-    <div className="sm:flex sm:justify-end sm:items-start hidden sm:visible sticky top-0">
+    <div className="sm:flex sm:justify-end sm:items-start hidden sm:visible">
       <input type="checkbox" id="menu-toggle" className="hidden" />
 
       <div className="text-content flex flex-col items-end space-y-4">

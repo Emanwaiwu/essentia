@@ -497,13 +497,8 @@ const Home = () => {
               </div>
             </div>
             <div className="grid sm:grid-cols-1 grid-cols-2 mt-10 text-wrap cursor-pointer pl-4">
-              <motion.div
-                variants={buildVariant}
-                initial="hidden"
-                animate="show"
-                viewport={{ once: true }}
+              <div
                 className="space-y-3 text-[#000000] sm:text-[1.5rem] smm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] text-[50px]"
-                loading="lazy" 
               >
                 {[
                   "Skyline Residences",
@@ -529,7 +524,7 @@ const Home = () => {
                     </motion.span>
                   </motion.h1>
                 ))}
-              </motion.div>
+              </div>
 
               <div className=" w-[600px] space-y-24 md:space-y-10 lg:space-y-16 sm:space-y-14 space-x-32 sm:space-x-0  md:space-x-0 lg:space-x-0 sm:hidden">
                 {[
@@ -547,14 +542,7 @@ const Home = () => {
                     date: "Feb 2019",
                   },
                 ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ x: index % 2 === 0 ? 30 : -30, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{
-                      duration: 1,
-                      delay: 1 + index * 0.02,
-                    }}
+                  <div
                     viewport={{ once: true }}
                     className={`flex ${index % 2 === 0 ? "justify-end" : "justify-start"}`}
                   >
@@ -573,7 +561,7 @@ const Home = () => {
                         </p>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
