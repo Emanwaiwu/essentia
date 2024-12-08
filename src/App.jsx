@@ -5,15 +5,13 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Loading from "./Loading";
 import Home from "./Home";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Loading />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

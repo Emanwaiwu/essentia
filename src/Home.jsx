@@ -207,42 +207,80 @@ const Home = () => {
             }}
           >
             <div className="h-full flex flex-col justify-between">
-              <div className="flex justify-between items-start body text-content font-bold text-[16px]">
+              <div className="flex justify-between items-start body text-content text-[16px]">
                 <motion.div
                   variants={navVariant}
                   initial="hidden"
-                  whileInView="show"
+                  animate="show"
                   viewport={{
                     once: true,
                   }}
                   className="body w-fit flex sm:flex-wrap md:flex-wrap text-center cursor-default"
                 >
                   <div className="flex">
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>E</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>S</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>S</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>E</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>N</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>T</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>I</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>A</motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      E
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      S
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      S
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      E
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      N
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      T
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      I
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      A
+                    </motion.h1>
                   </div>
 
                   <div style={{ width: 5 }}></div>
 
                   {/* Group "ENGINEERING" */}
                   <div className="flex">
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>E</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>N</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>G</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>I</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>N</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>E</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>E</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>R</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>I</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>N</motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{y:-4}}>G</motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      E
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      N
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      G
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      I
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      N
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      E
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      E
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      R
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      I
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      N
+                    </motion.h1>
+                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
+                      G
+                    </motion.h1>
                   </div>
                 </motion.div>
 
@@ -250,7 +288,7 @@ const Home = () => {
                   className="flex space-x-20 sm:hidden"
                   variants={navVariant}
                   initial="hidden"
-                  whileInView="show"
+                  animate="show"
                   viewport={{
                     once: true,
                   }}
@@ -331,7 +369,7 @@ const Home = () => {
               <motion.div
                 variants={fadeVariant}
                 initial="hidden"
-                whileInView="show"
+                animate="show"
                 viewport={{
                   once: true,
                 }}
@@ -378,7 +416,7 @@ const Home = () => {
                   <motion.div
                     variants={buildVariant2}
                     initial="hidden"
-                    whileInView="show"
+                    animate="show"
                     viewport={{}}
                     className="responsive-texts flex items-end md:mt-20 lg:mt-20 mt-20 sm:mt-0"
                   >
@@ -407,38 +445,25 @@ const Home = () => {
               </FlipLink>
               ]
             </div>
-            <div className="">
-              <motion.div className="content sm:px-0 px-4">
-                <motion.h1 style={{ color: textColor }}>
-                  <Paragraph />
-                </motion.h1>
-              </motion.div>
-              <div className="mt-14">
-                <div className="flex justify-center cursor-pointer">
-                  <motion.div
-                    initial={{ width: "95%" }}
-                    whileInView={{ width: "100%" }}
-                    transition={{
-                      duration: 5,
-                      once: true,
-                    }}
-                    viewport={{
-                      once: true,
-                    }}
-                    className="flex justify-between px-4 py-2 uppercase border-black border-t border-b-[1px] mt-5 group text-[16px] items-center"
-                  >
-                    <span className="flex items-center gap-4 group-hover:ml-3 transition-all duration-300 ">
-                      <img
-                        src={ceo}
-                        alt=""
-                        className="w-10 h-10 rounded-[3px] object-cover"
-                      />
-                      CEO/Founding Principal{" "}
-                    </span>
-                    <span className="group-hover:mr-3 transition-all duration-300">
-                      <img src={arrow} alt="" />
-                    </span>
-                  </motion.div>
+            <div className="content sm:px-0 px-4">
+              <h1 style={{ color: textColor }}>
+                <Paragraph />
+              </h1>
+            </div>
+            <div className="mt-14">
+              <div className="flex justify-center cursor-pointer px-4">
+                <div className="flex justify-between px-4 py-2 uppercase border-black border-t border-b-[1px] mt-5 group text-[16px] items-center w-full">
+                  <span className="flex items-center gap-4 group-hover:ml-3 transition-all duration-300 ">
+                    <img
+                      src={ceo}
+                      alt=""
+                      className="w-10 h-10 rounded-[3px] object-cover"
+                    />
+                    CEO/Founding Principal{" "}
+                  </span>
+                  <span className="group-hover:mr-3 transition-all duration-300">
+                    <img src={arrow} alt="" />
+                  </span>
                 </div>
               </div>
             </div>
@@ -455,18 +480,9 @@ const Home = () => {
 
           <section className=" p-7 max-w-[1440px] mx-auto" id="buildings">
             <div>
-              <motion.h1
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  duration: 3,
-                  delay: 0.5,
-                }}
-                viewport={{ once: true }}
-                className="font-bold text-[16.5rem] text-center text-[#E7E7E7] md:text-[8.5rem] lg:text-[11.5rem] xl:text-[13.5rem] sm:text-[15vw]"
-              >
+              <h1 className="font-bold text-[16.5rem] text-center text-[#E7E7E7] md:text-[8.5rem] lg:text-[11.5rem] xl:text-[13.5rem] sm:text-[15vw]">
                 PROJECTS
-              </motion.h1>
+              </h1>
               <div className="heading-left">
                 [
                 <FlipLink
@@ -483,257 +499,78 @@ const Home = () => {
                 variants={buildVariant}
                 initial="hidden"
                 whileInView="show"
-                viewport={{
-                  once: true,
-                  amount: 0.3,
-                }}
+                viewport={{ once: true, amount: 0.3 }}
                 className="space-y-3 text-[#000000] sm:text-[1.5rem] smm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] text-[50px]"
               >
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  Skyline Residences{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  The Caramel Handmade{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  Axis Business Park{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  Wellness Institute{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  Pioneer University Complex{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  Nexus Convention Hall{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  Herb One{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  City Garden Pavilion{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group w-[500px]"
-                >
-                  Aurora of Art{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  Elysian Estate{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
-                <motion.h1
-                  variants={childVariantX}
-                  className="hover:ml-10 transition-all duration-300 inline-flex items-center gap-5 relative group "
-                >
-                  {" "}
-                  Green Haven Villa{" "}
-                  <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
-                    <img src={arrow} alt="" className="w-4 mt-2" />
-                  </motion.span>
-                </motion.h1>
+                {[
+                  "Skyline Residences",
+                  "The Caramel Handmade",
+                  "Axis Business Park",
+                  "Wellness Institute",
+                  "Pioneer University Complex",
+                  "Nexus Convention Hall",
+                  "Herb One",
+                  "City Garden Pavilion",
+                  "Aurora of Art",
+                  "Elysian Estate",
+                  "Green Haven Villa",
+                ].map((title, index) => (
+                  <motion.h1
+                    key={index}
+                    variants={childVariantX}
+                    className="hover:ml-10 transition-all duration-300 flex items-center gap-5 relative group"
+                  >
+                    {title}
+                    <motion.span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center">
+                      <img src={arrow} alt="" className="w-4 mt-2" />
+                    </motion.span>
+                  </motion.h1>
+                ))}
               </motion.div>
 
               <div className="space-y-24 md:space-y-10 lg:space-y-16 sm:space-y-14 space-x-32 sm:space-x-0  md:space-x-0 lg:space-x-0 sm:hidden">
-                <motion.div
-                  initial={{ x: 30, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{
-                    duration: 1,
-                    delay: 1,
-                  }}
-                  viewport={{
-                    once: true,
-                  }}
-                  className="flex justify-end"
-                >
-                  {" "}
-                  <div className="w-[150px] justify-end flex-col">
-                    <img
-                      src={no2}
-                      alt=""
-                      className="object-cover w-[150px] h-[75px] rounded-[10px]"
-                    />
-                    <div className="img-text">
-                      <p>02</p>
-                      <p className="leading-3 text-right">
-                        The Caramel Handmade <br />
-                        Sep 2020
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  initial={{ x: -30, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{
-                    duration: 1,
-                    delay: 1.1,
-                  }}
-                  viewport={{
-                    once: true,
-                  }}
-                  className="flex justify-start"
-                >
-                  {" "}
-                  <div className="w-[150px]">
-                    <img
-                      src={no3}
-                      alt=""
-                      className="object-cover w-[150px] h-[75px] rounded-[10px]"
-                    />
-                    <div className="img-text">
-                      <p>03</p>
-                      <p className=" leading-3 text-right">
-                        Wellness Institute <br />
-                        Jul 2021
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-
-                <div className="flex justify-end">
+                {[
+                  { img: no2, title: "The Caramel Handmade", date: "Sep 2020" },
+                  { img: no3, title: "Wellness Institute", date: "Jul 2021" },
+                  {
+                    img: no4,
+                    title: "Pioneer University Complex",
+                    date: "Apr 2022",
+                  },
+                  { img: no5, title: "Aurora of Art", date: "Oct 2021" },
+                  {
+                    img: no6,
+                    title: "Nexus Convention Hall",
+                    date: "Feb 2019",
+                  },
+                ].map((item, index) => (
                   <motion.div
-                    initial={{ x: 30, opacity: 0 }}
+                    key={index}
+                    initial={{ x: index % 2 === 0 ? 30 : -30, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
                       duration: 1,
-                      delay: 1.15,
+                      delay: 1 + index * 0.02,
                     }}
-                    viewport={{
-                      once: true,
-                    }}
-                    className="w-[150px]"
+                    viewport={{ once: true }}
+                    className={`flex ${index % 2 === 0 ? "justify-end" : "justify-start"}`}
                   >
-                    <img
-                      src={no4}
-                      alt=""
-                      className="object-cover w-[150px] h-[75px] rounded-[10px]"
-                    />
-                    <div className="img-text">
-                      <p>04</p>
-                      <p className=" text-right leading-3">
-                        Pioneer University Complex <br />
-                        Apr 2022
-                      </p>
+                    <div className="w-[150px]">
+                      <img
+                        src={item.img}
+                        alt=""
+                        className="object-cover w-[150px] h-[75px] rounded-[10px]"
+                      />
+                      <div className="img-text">
+                        <p>{index + 1}</p>
+                        <p className="leading-3 text-right">
+                          {item.title} <br />
+                          {item.date}
+                        </p>
+                      </div>
                     </div>
                   </motion.div>
-                </div>
-
-                <motion.div
-                  initial={{ x: -30, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{
-                    duration: 1,
-                    delay: 1.17,
-                  }}
-                  viewport={{
-                    once: true,
-                  }}
-                  className="flex justify-start"
-                >
-                  <div className="w-[150px]">
-                    <img
-                      src={no5}
-                      alt=""
-                      className="object-cover w-[150px] h-[75px] rounded-[10px]"
-                    />
-                    <div className="img-text">
-                      <p>05</p>
-                      <p className="text-right leading-3">
-                        Aurora of Art <br />
-                        Oct 2021
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  initial={{ x: 30, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{
-                    duration: 1,
-                    delay: 1.2,
-                  }}
-                  viewport={{
-                    once: true,
-                  }}
-                  className="flex justify-end"
-                >
-                  {" "}
-                  <div className="w-[150px]">
-                    <img
-                      src={no6}
-                      alt=""
-                      className="object-cover w-[150px] h-[75px] rounded-[10px]"
-                    />
-                    <div className="img-text">
-                      <p>06</p>
-                      <p className="text-right leading-3">
-                        Nexus Convention Hall <br />
-                        Feb 2019
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
+                ))}
               </div>
             </div>
 
@@ -751,17 +588,9 @@ const Home = () => {
           <section className=" overflow-visible" id="careers">
             <div className="p-7 max-w-[1440px] mx-auto sticky z-10">
               <div>
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 3,
-                  }}
-                  viewport={{ once: true }}
-                  className="font-bold text-[16.5rem] leading-[95%] text-[#E7E7E7] md:text-[8.5rem] lg:text-[11.5rem] xl:text-[13.5rem] sm:text-[20vw]"
-                >
+                <h1 className="font-bold text-[16.5rem] leading-[95%] text-[#E7E7E7] md:text-[8.5rem] lg:text-[11.5rem] xl:text-[13.5rem] sm:text-[20vw]">
                   Be Part of Our Crew
-                </motion.h1>
+                </h1>
                 <div className="heading">
                   [
                   <FlipLink
