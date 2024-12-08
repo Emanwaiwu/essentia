@@ -125,7 +125,7 @@ input[type="checkbox"] {
 
 .bg {
   background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(19, 16, 12, 0.60)),
-    url("./assets/loading-bg.jpg");
+    url("./assets/loading-bg.webp");
   background-blend-mode: normal;
   background-size: cover;
   background-position: center;
@@ -134,15 +134,7 @@ input[type="checkbox"] {
 
 .contact {
   background: linear-gradient(rgba(19, 16, 12, 0.98), rgba(19, 16, 12, 0.98)),
-    url("./assets/footer-bg.jpg");
-  background-blend-mode: normal;
-  background-size: cover;
-  background-position: center;
-}
-
-.loading {
-  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(19, 16, 12, 0.90)),
-    url("./assets/bg.jpg");
+    url("./assets/footer-bg.webp");
   background-blend-mode: normal;
   background-size: cover;
   background-position: center;
