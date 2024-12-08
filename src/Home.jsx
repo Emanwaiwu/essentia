@@ -411,7 +411,7 @@ const Home = () => {
 
               <div className="flex justify-center">
                 {" "}
-                <div className="text-white text-center font-bold max-h-[1440px]">
+                <div className="text-white text-center max-h-[1440px]">
                   {" "}
                   <motion.div
                     variants={buildVariant2}
@@ -480,7 +480,7 @@ const Home = () => {
 
           <section className=" p-7 max-w-[1440px] mx-auto" id="buildings">
             <div>
-              <h1 className="font-bold text-[16.5rem] text-center text-[#E7E7E7] md:text-[8.5rem] lg:text-[11.5rem] xl:text-[13.5rem] sm:text-[15vw]">
+              <h1 className="text-[16.5rem] text-center text-[#E7E7E7] md:text-[8.5rem] lg:text-[11.5rem] xl:text-[13.5rem] sm:text-[15vw]">
                 PROJECTS
               </h1>
               <div className="heading-left">
@@ -588,7 +588,7 @@ const Home = () => {
           <section className=" overflow-visible" id="careers">
             <div className="p-7 max-w-[1440px] mx-auto sticky z-10">
               <div>
-                <h1 className="font-bold text-[16.5rem] leading-[95%] text-[#E7E7E7] md:text-[8.5rem] lg:text-[11.5rem] xl:text-[13.5rem] sm:text-[20vw]">
+                <h1 className="text-[16.5rem] leading-[95%] text-[#E7E7E7] md:text-[8.5rem] lg:text-[11.5rem] xl:text-[13.5rem] sm:text-[20vw]">
                   Be Part of Our Crew
                 </h1>
                 <div className="heading">
