@@ -3,7 +3,7 @@ import bg from "./assets/bg.png";
 import Lenis from "lenis";
 import "./App.css";
 import Menu from "./Components/Menu.jsx";
-
+import line from "./assets/Line.svg";
 import arrow from "./assets/arrow.svg";
 import arrow2 from "./assets/arrow2.svg";
 import arrow3 from "./assets/arrow3.svg";
@@ -341,7 +341,7 @@ const Home = () => {
                   <div className="image-text-container">
                     <div className="text">
                       <p className="text-balance flex items-start gap-2">
-                        <img src="" alt="" className="" />
+                        <img src={line} alt="" className="" />
                         At Essentia Engineering, buildings are more than just
                         structures they are entities that inspire and uplift.
                         Explore our work and learn more about our approach to
@@ -917,7 +917,7 @@ const Home = () => {
                   <div className="border-b-[0.2px] border-white w-fit">
                     <h2 className="flex mr-4 text-[18px] sm:text-[14px] md:text-[14px]">
                       {" "}
-                      <img src="" alt="" className="mr-2" />
+                      <img src={line} alt="" className="mr-2" />
                       info@essengineering.com
                     </h2>
                   </div>
