@@ -500,8 +500,8 @@ const Home = () => {
               <motion.div
                 variants={buildVariant}
                 initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.3 }}
+                animate="show"
+                viewport={{ once: true }}
                 className="space-y-3 text-[#000000] sm:text-[1.5rem] smm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] text-[50px]"
                 loading="lazy" 
               >

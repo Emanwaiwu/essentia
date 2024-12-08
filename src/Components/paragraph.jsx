@@ -8,7 +8,7 @@ const Paragraph = () => {
     offset: ["start 0.4", "0.7 start"],
   });
 
-  const text = `      We’re a team of dedicated structural and civil engineers committed to bringing visionary designs to life. Our approach blends precision with innovation, crafting solutions that meet each client’s specific goals while pushing the boundaries of engineering excellence. We deliver resilient, sustainable, and functional designs that stand the test of time. We believe in engineering solutions that not only meet today's needs but also anticipate challenges.`;
+  const text = `We’re a team of dedicated structural and civil engineers committed to bringing visionary designs to life. Our approach blends precision with innovation, crafting solutions that meet each client’s specific goals while pushing the boundaries of engineering excellence. We deliver resilient, sustainable, and functional designs that stand the test of time. We believe in engineering solutions that not only meet today's needs but also anticipate challenges.`;
 
   const words = text.split(" ");
 
