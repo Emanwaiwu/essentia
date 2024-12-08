@@ -566,7 +566,7 @@ const Home = () => {
                         loading="lazy" 
                       />
                       <div className="img-text">
-                        <p>{index + 1}</p>
+                        <p>0{index + 2}</p>
                         <p className="leading-3 text-right">
                           {item.title} <br />
                           {item.date}
