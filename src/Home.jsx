@@ -33,11 +33,11 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.4]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
   const scale2 = useTransform(scrollYProgress, [0, 1], [0.9, 1.2]);
   const scale3 = useTransform(scrollYProgress, [0, 1], [0.8, 1.1]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  const corners = useTransform(scrollYProgress, [0, 0.2], ["0px", "50px"]);
+  const corners = useTransform(scrollYProgress, [0, 0.1], ["0px", "50px"]);
   const textColor = useTransform(
     scrollYProgress,
     [0, 0, 1],
@@ -219,68 +219,8 @@ const Home = () => {
                   className="body w-fit flex sm:flex-wrap md:flex-wrap text-center cursor-default"
                 >
                   <div className="flex">
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      E
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      S
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      S
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      E
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      N
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      T
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      I
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      A
-                    </motion.h1>
-                  </div>
-
-                  <div style={{ width: 5 }}></div>
-
-                  {/* Group "ENGINEERING" */}
-                  <div className="flex">
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      E
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      N
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      G
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      I
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      N
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      E
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      E
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      R
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      I
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      N
-                    </motion.h1>
-                    <motion.h1 variants={childVariant} whileHover={{ y: -4 }}>
-                      G
+                    <motion.h1 className="variants={childVariant}">
+                      ESSENTIA ENGINEERING
                     </motion.h1>
                   </div>
                 </motion.div>
@@ -470,13 +410,13 @@ const Home = () => {
               </div>
             </div>
             <div>
-              <motion.div style={{ scale: scale2 }} className="w-full mx-auto">
+              <div style={{ scale: scale2 }} className="w-full mx-auto">
                 <img src={no1} alt="" className="large-img" loading="lazy"  />
                 <div className="img-text">
                   <p>01</p>
                   <p>Herb One | Aug 2020 | 500,000 sqft</p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </section>
 
@@ -567,13 +507,13 @@ const Home = () => {
             </div>
 
             <div>
-              <motion.div style={{ scale: scale3 }} className="w-full mx-auto">
+              <div style={{ scale: scale3 }} className="w-full mx-auto">
                 <img src={no7} alt="" className="large-img" loading="lazy" />
                 <div className="img-text">
                   <p>07</p>
                   <p>Axis Business Park | Sep 2018 | 675,000 sqft</p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </section>
 
